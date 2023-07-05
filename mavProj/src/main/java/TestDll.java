@@ -25,7 +25,7 @@ public interface myInterface extends Library {
         //void request(int r, String s);
         void Request(int p, String t);
         void Request1(int p, String t);
-        myNextInterface INSTANCE = (myNextInterface)  Native.loadLibrary("C:\\Users\\RD-Administator\\source\\repos\\rolemanager2\\RoleManager-Src\\x64\\Release\\RM_API",myNextInterface.class);
+        myNextInterface INSTANCE = (myNextInterface)  Native.loadLibrary("C:\\Users\\RD-Administator\\source\\repos\\rolemanager22\\RoleManager-Src\\bin\\x64\\RU_DE\\RM_API.DLL",myNextInterface.class);
     }
 
     public static void main(String argv[])
@@ -35,7 +35,7 @@ public interface myInterface extends Library {
         mI.test(2,1);
         mI.test(3,4);
         myNextInterface mNI = myNextInterface.INSTANCE;
-        mNI.Request1(1,"s");
+        //mNI.Request1(1,"s");
         mNI.Request(1,"s");
         var path = System.getProperty("java.library.path");
 
