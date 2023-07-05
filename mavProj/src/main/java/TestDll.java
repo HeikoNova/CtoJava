@@ -37,7 +37,7 @@ public interface myInterface extends Library {
         myNextInterface mNI = myNextInterface.INSTANCE;
         mNI.Request1(1,"s");
         mNI.Request(1,"s");
-var path = System.getProperty("java.library.path");
+        var path = System.getProperty("java.library.path");
 
 
     }
