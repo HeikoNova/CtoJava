@@ -34,10 +34,12 @@ public interface myInterface extends Library {
         myInterface mI = myInterface.INSTANCE;
         mI.test(2,1);
         mI.test(3,4);
+        //mI.request(3, s);
+        mI.getMe("Ich sehe dich");
         myNextInterface mNI = myNextInterface.INSTANCE;
         //mNI.Request1(1,"s");
         mNI.Request(1,"s");
-        var path = System.getProperty("java.library.path");
+var path = System.getProperty("java.library.path");
 
 
     }
